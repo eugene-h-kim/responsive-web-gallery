@@ -139,7 +139,7 @@ main section article div img {
 
 main section article div h2 {
   margin-top: 15px;
-  font: hold 11px/1 "orbitron";
+  font: bold 11px/1 "orbitron";
   letter-spacing: 1px;
   color: #444;
   margin-bottom: 5px;
@@ -149,4 +149,94 @@ main section article div p {
   font: 10px/1.2 "arial";
   color: #777;
   margin-bottom: 15px;
+}
+
+
+/* ---------- Phase-08 ---------- */
+
+/* media query - browser max-1600px  */
+
+@media screen and (max-width: 1599px) {
+  header {
+    width: 350px;
+  }
+  main {
+    margin-left: 350px;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+
+/* media query - browser max-1200px  */
+
+@media screen and (max-width: 1199px) {
+  header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+  header h1 {
+    font: bold 24px/1 "orbitron";
+    transform: translateY(-50%);
+  }
+  header h1::before, header h1::after {
+    display: none;
+  }
+  header ul {
+    left: 83%;
+    bottom: 25px;
+  }
+  header ul li {
+    margin-right: 20px;
+  }
+  header ul li a {
+    font-size: 20px;
+  }
+  header ul li a span {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin-left: 0px;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+
+
+/* media query - browser max-900px  */
+
+@media screen and (max-width:899px) {
+  header ul {
+    left: 80%;
+  }
+  main section article {
+    width: 33.333%;
+  }
+}
+
+
+/* media query - browser max-680px  */
+
+@media screen and (max-width: 679px) {
+  header ul {
+    left: 70%;
+  }
+  main section article {
+    width: 50%;
+  }
+}
+
+
+/* media query - browser max-540px  */
+
+@media screen and (max-width: 539px) {
+  header ul {
+    display: none;
+  }
+  main section article {
+    width: 100%;
+  }
 }
